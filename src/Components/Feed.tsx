@@ -3,17 +3,19 @@ import { Box, Stack, Typography } from "@mui/material";
 import { SideBar } from "./SideBar";
 import { Videos } from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-
+import { RootObject } from "../Types/AllTypes";
+import { Item } from "../Types/AllTypes";
 export const Feed: React.FC = () => {
+  const [SelectedCategory, setSelectedCategory] = useState<string>("New");
 
-  const [SelectedCategory, setSelectedCategory] = useState("New");
-
-  const [videos, setvideos] = useState([]);
+  const [videos, setvideos] = useState<Item[]>([]);
 
   useEffect(() => {
-    fetchFromAPI(`search?part=snippet&q=${SelectedCategory}`).then((data) => {
-      setvideos(data.items);
-    });
+    fetchFromAPI(`search?part=snippet&q=${SelectedCategory}`).then(
+      (data: RootObject) => {
+        setvideos(data.items);
+      }
+    );
   }, [SelectedCategory]);
 
   return (
@@ -78,6 +80,7 @@ export const Feed: React.FC = () => {
             video
           </span>
         </Typography>
+
         <Videos videos={videos} />
       </Box>
     </Stack>
