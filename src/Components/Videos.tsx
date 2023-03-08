@@ -15,7 +15,7 @@ export const Videos: React.FC<VideoProps> = (props: VideoProps) => {
 
       {props.videos.map((item: any, idx: number) => {
         <Box key={idx}>
-          {item.id.videoId && <VideoCard />}
+          {item.id.videoId && <VideoCard video={props.videos} />}
           {/* {item.id.channelId && <ChannelCard  />} */}
         </Box>;
       })}

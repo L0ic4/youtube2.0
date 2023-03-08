@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { SideBar } from "./SideBar";
@@ -6,13 +5,17 @@ import { Videos } from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 export const Feed: React.FC = () => {
+
   const [SelectedCategory, setSelectedCategory] = useState("New");
+
   const [videos, setvideos] = useState([]);
+
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${SelectedCategory}`).then((data) => {
       setvideos(data.items);
     });
   }, [SelectedCategory]);
+
   return (
     <Stack
       sx={{

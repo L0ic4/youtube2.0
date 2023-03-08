@@ -1,5 +1,5 @@
 import React from "react";
 
-export const ChannelCard = () => {
+export const ChannelCard : React.FC= () => {
   return <div>ChannelCard</div>;
 };
