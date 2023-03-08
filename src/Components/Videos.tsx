@@ -9,14 +9,11 @@ interface VideoProps {
 }
 
 export const Videos: React.FC<VideoProps> = (props: VideoProps) => {
-
   return (
     <Stack direction={"row"} flexWrap={"wrap"} justifyContent={"start"} gap={2}>
       {props.videos.map((item: Item, idx: number) => {
         return (
-          <Box key={idx}>
-            {item.id.videoId && <VideoCard video={item} />}
-          </Box>
+          <Box key={idx}>{item.id.videoId && <VideoCard video={item} />}</Box>
         );
       })}
     </Stack>
