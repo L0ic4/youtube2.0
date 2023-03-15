@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
-export const ChannelDetails : React.FC  = () => {
-  return (
-    <div> </div>
-  )
-}
+export const ChannelDetails: React.FC = () => {
+  return <div> </div>;
+};

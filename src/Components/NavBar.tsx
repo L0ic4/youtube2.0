@@ -2,9 +2,9 @@ import React from "react";
 import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
 import { logo } from "../utils/constants";
-import {SearchBar} from "./SearchBar";
+import { SearchBar } from "./SearchBar";
 
-export const NavBar : React.FC = () => (
+export const NavBar: React.FC = () => (
   <Stack
     direction={"row"}
     alignItems={"center"}
@@ -16,15 +16,15 @@ export const NavBar : React.FC = () => (
       justifyContent: "space-between",
     }}
   >
-    <Link to={"/"} style={{
-        display:"flex",
-        alignItems:"center"
-
-    }}>
-        <img src={logo} alt="" height={45}/>
-
+    <Link
+      to={"/"}
+      style={{
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
+      <img src={logo} alt="" height={45} />
     </Link>
-    <SearchBar/>
+    <SearchBar />
   </Stack>
 );
-

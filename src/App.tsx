@@ -2,14 +2,13 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
 
-import {NavBar} from "./Components/NavBar";
-import {Feed} from "./Components/Feed";
-import {VideoDetails} from "./Components/VideoDetails";
-import {SearchFeed} from "./Components/SearchFeed";
-import {ChannelDetails} from "./Components/ChannelDetails";
+import { NavBar } from "./Components/NavBar";
+import { Feed } from "./Components/Feed";
+import { VideoDetails } from "./Components/VideoDetails";
+import { SearchFeed } from "./Components/SearchFeed";
+import { ChannelDetails } from "./Components/ChannelDetails";
 
-
-const App : React.FC= () => {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Box sx={{ backgroundColor: "#000" }}>

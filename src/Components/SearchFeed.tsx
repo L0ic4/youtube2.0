@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
-export const SearchFeed : React.FC= () => {
-  return (
-    <div>SearchFeed</div>
-  )
-}
+export const SearchFeed: React.FC = () => {
+  return <div>SearchFeed</div>;
+};

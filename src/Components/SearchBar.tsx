@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from "@mui/material";
 import { Search } from "@mui/icons-material";
 
-export const SearchBar : React.FC= () => {
+export const SearchBar: React.FC = () => {
   return (
     <Paper
       component={"form"}
@@ -36,4 +36,3 @@ export const SearchBar : React.FC= () => {
     </Paper>
   );
 };
-
