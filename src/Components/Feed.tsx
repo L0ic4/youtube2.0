@@ -3,8 +3,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { SideBar } from "./SideBar";
 import { Videos } from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-import { RootObject } from "../Types/AllTypes";
-import { Item } from "../Types/AllTypes";
+import { Item,RootObject } from "../Types/AllTypes";
 export const Feed: React.FC = () => {
   const [SelectedCategory, setSelectedCategory] = useState<string>("New");
 

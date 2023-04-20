@@ -1,10 +1,6 @@
 import React from "react";
 import { Item } from "../Types/AllTypes";
-import { Box } from "@mui/material";
-import { CardContent } from "@mui/material";
-import { CardMedia } from "@mui/material";
-import { Typography } from "@mui/material";
-import { CheckCircle } from "@mui/icons-material";
+import { Box,CardContent,CardMedia } from "@mui/material";
 import { Link } from "react-router-dom";
 
 interface ChannelCardProps {
@@ -46,6 +42,7 @@ export const ChannelCard: React.FC<ChannelCardProps> = (
               border: "1px solid #e3e3e3",
             }}
             image={props?.ChannelDetail?.snippet?.thumbnails?.high?.url}
+
           />
         </CardContent>
       </Link>

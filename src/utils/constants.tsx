@@ -1,16 +1,18 @@
-import { MusicNote } from "@mui/icons-material";
-import { Home } from "@mui/icons-material";
-import { Code } from "@mui/icons-material";
-import { OndemandVideo } from "@mui/icons-material";
-import { SportsEsports } from "@mui/icons-material";
-import { LiveTv } from "@mui/icons-material";
-import { School } from "@mui/icons-material";
-import { FaceRetouchingNatural } from "@mui/icons-material";
-import { Checkroom } from "@mui/icons-material";
-import { GraphicEq } from "@mui/icons-material";
-import { TheaterComedy } from "@mui/icons-material";
-import { FitnessCenter } from "@mui/icons-material";
-import { DeveloperMode } from "@mui/icons-material";
+import {
+  MusicNote,
+  School,
+  DeveloperMode,
+  Checkroom,
+  FitnessCenter,
+  Home,
+  Code,
+  OndemandVideo,
+  SportsEsports,
+  LiveTv,
+  TheaterComedy,
+  FaceRetouchingNatural,
+  GraphicEq
+} from "@mui/icons-material";
 import { ReactNode } from "react";
 
 export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
